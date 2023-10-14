@@ -9,7 +9,6 @@ import {
   NotFoundException,
   InternalServerErrorException,
 } from '@nestjs/common'
-import { ExerciseService } from '../services/exercise.service'
 import {
   ApiTags,
   ApiResponse,
@@ -17,6 +16,7 @@ import {
   ApiOkResponse,
 } from '@nestjs/swagger'
 import { Exercise } from 'src/schemas/exercise.schema'
+import { ExerciseService } from 'src/service/exercise/exercise.service'
 
 @ApiTags('exercises')
 @Controller('exercises')

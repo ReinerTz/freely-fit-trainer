@@ -23,4 +23,6 @@ export function generateId<TClass = any>(
     }
     next()
   })
+
+  return c
 }
