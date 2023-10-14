@@ -2,7 +2,7 @@ import { Prop, SchemaFactory } from '@nestjs/mongoose'
 import { EMuscleGroup } from 'src/enums/muscleGroup.enum'
 import { BaseSchema, generateId } from './base.schema'
 
-export class Exercise extends BaseSchema {
+export class Exercises extends BaseSchema {
   @Prop({ type: String, required: true })
   name: string
 
@@ -17,6 +17,6 @@ export class Exercise extends BaseSchema {
 }
 
 export const ExerciseSchema = generateId(
-  SchemaFactory.createForClass(Exercise),
+  SchemaFactory.createForClass(Exercises),
   'exer',
 )

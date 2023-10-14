@@ -5,7 +5,7 @@ import { ConfigModule } from '@nestjs/config'
 import { MongooseModule } from '@nestjs/mongoose'
 import { ExerciseController } from './controller/exercise/exercise.controller'
 import { ExerciseService } from './service/exercise/exercise.service'
-import { ExerciseSchema } from './schemas/exercise.schema'
+import { ExerciseSchema } from './schemas/exercises.schema'
 
 @Module({
   imports: [

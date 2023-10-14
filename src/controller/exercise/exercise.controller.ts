@@ -15,7 +15,7 @@ import {
   ApiCreatedResponse,
   ApiOkResponse,
 } from '@nestjs/swagger'
-import { Exercise } from 'src/schemas/exercise.schema'
+import { Exercise } from 'src/schemas/exercises.schema'
 import { ExerciseService } from 'src/service/exercise/exercise.service'
 
 @ApiTags('exercises')
